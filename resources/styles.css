@@ -25,7 +25,7 @@ h1,h2,h3,h4,p { margin: 0; padding: 0; font-family: "Trebuchet MS"; }
 
 .loadingBar { height:32px; background: rgba(218, 128, 14, 0.4); border-radius: 2px; }
 .loadingBar > p { color: white; height: 20px; overflow: visible; word-break: break-all; padding: 0px 4px; text-shadow: 1px 1px #000; }
-.loadingBar > .loadStatus { width: calc(100% - 58px); margin-top: -26px; }
+.loadingBar > .loadStatus { width: 534px; margin-top: -26px; }
 .loadingBar > .loadPercent { width: 50px; margin-top: -20px; text-align: right; float: right; }
 .loadingBar > .bar {  display: block; width: 200px; height: 100%; background: rgb(255, 153, 0);  border-radius: 2px; }
 

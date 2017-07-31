@@ -52,6 +52,6 @@ function DownloadingFile(fileName) {
     filesNeeded = Math.max(0, filesNeeded - 1);
     updateProgress();
 
-    var status = 'Downloading' + fileName + '...';
+    var status = 'Downloading ' + fileName + '...';
     changeStatus(status);
 }
