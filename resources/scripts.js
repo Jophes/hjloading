@@ -1,14 +1,10 @@
 
 function randomBackground() {
-    'use strict';
     var mapId = 1 + Math.floor(Math.random() * 9);
     document.getElementsByTagName('body')[0].style = 'background-image: url(resources/backgrounds/' + mapId + '.jpg);';
 }
 
 window.addEventListener('load', randomBackground);
-
-/*(function () {
-    'use strict';*/
 
 var barObj, statusObj, percentageObj, totalFiles = 1, filesNeeded = 1, progress = 0.0;
 
@@ -36,7 +32,7 @@ function SetFilesNeeded(needed) {
 function updateProgress() {
     var filesRemaining = Math.max(0, totalFiles - filesNeeded), progress = (totalFiles > 0) ? (filesRemaining / totalFiles) : 1;
     progress = Math.round(progress * 100);
-    percentageObj.innerHTML = progress;
+    percentageObj.innerHTML = progress + '%';
     barObj.style.width = progress + '%';
 }
 
@@ -59,13 +55,3 @@ function DownloadingFile(fileName) {
     var status = 'Downloading' + fileName + '...';
     changeStatus(status);
 }
-//}());
-/*
-var countdown = 100
-function updateFilesNeeded() {
-    DownloadingFile("models/materials/debug/testing.vtf")
-    countdown--;
-    if (countdown > 0) {
-        setTimeout(updateFilesNeeded, 1);
-    }
-}*/
