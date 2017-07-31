@@ -1,5 +1,4 @@
 
-
 function randomBackground() {
     'use strict';
     var mapId = 1 + Math.floor(Math.random() * 9);
@@ -7,6 +6,11 @@ function randomBackground() {
     
     //document.getElementById('map').innerHTML = "rp_evocity_v2d";
     //document.getElementById('gamemode').innerHTML = "DarkRP";
+    
+    /*GameDetails("name", "", "rp_evocity_v2d", "22", "STEAMID:0:0:112412", "DarkRP");
+    SetFilesTotal(countdown);
+    SetFilesNeeded(countdown);
+    setTimeout(updateFilesNeeded, 1);*/
 }
 
 window.addEventListener('load', randomBackground);
@@ -22,9 +26,9 @@ window.addEventListener('load', randomBackground);
         //document.getElementById('steamid').innerHTML = steamid;
         //document.getElementById('slots').innerHTML = maxplayers;
         
-        barObj.getElementById('bar');
-        statusObj.getElementById('status');
-        percentageObj.getElementById('percentage');
+        barObj = document.getElementById('bar');
+        statusObj = document.getElementById('status');
+        percentageObj = document.getElementById('percentage');
         
         randomBackground();
     }
@@ -64,3 +68,12 @@ window.addEventListener('load', randomBackground);
         changeStatus(status);
     }
 }());
+/*
+var countdown = 100
+function updateFilesNeeded() {
+    DownloadingFile("models/materials/debug/testing.vtf")
+    countdown--;
+    if (countdown > 0) {
+        setTimeout(updateFilesNeeded, 1);
+    }
+}*/
