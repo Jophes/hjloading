@@ -8,24 +8,32 @@
         <script src="resources/scripts.js"></script>
 	</head>
 	<body>
-		<div class="container">
-            <div class="column">
-                <div class="cell">
-                    <div class="serverInfo">
-                        
-                    </div>
-                    <div class="statusBar">
-                        <div class="loadingBar">
-                            <div class="bar"></div>
-                        </div>
-                        <p class="version">
-                            Version: 2.5
-                        </p>
-                        <p class="credits">
-                            Created for H&J's DarkRP
-                        </p>
-                    </div>
+        <div class="panel">
+            <div class="serverTitle">
+                <h1>H&J's DarkRP Server</h1>
+            </div>
+            <div class="serverInfo">
+                <div>
+                    <p>Map: <span id="map"></span></p>
+                    <p>Gamemode: <span id="gamemode"></span></p>
                 </div>
+                <!--<div>
+                    <p>Slots: <span id="slots"></span></p>
+                    <p>SteamID: <span id="steamid"></span></p>
+                </div>-->
+            </div>
+            <div class="statusBar">
+                <div class="loadingBar">
+                    <div id="bar" class="bar" style="width: 0%;"></div>
+                    <p id="status" class="loadStatus"></p>
+                    <p class="loadPercent"><span id="percentage">0</span>%</p>
+                </div>
+                <p class="version">
+                    Version: 2.5
+                </p>
+                <p class="credits">
+                    H&J Gaming
+                </p>
             </div>
         </div>
 	</body>

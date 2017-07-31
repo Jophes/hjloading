@@ -5,15 +5,29 @@ body { background: url(backgrounds/9.jpg) no-repeat center; background-size: cov
 h1,h2 { color: rgb(255, 153, 0); text-shadow: 2px 2px #000; }
 h1,h2,h3,h4,p { margin: 0; padding: 0; font-family: "Trebuchet MS"; }
 
-.container { position: absolute; width: 100%; height: 100%; display: table; }
+/*.container { position: absolute; width: 100%; height: 100%; display: table; }
 .column { display: table-cell; vertical-align: middle; }
-.cell { margin: 0 auto; width: 600px; height: 400px; }
+.cell { margin: auto; width: 600px; }*/
 
-.serverInfo { height:336px; background: rgba(38, 38, 38, 0.875); border-radius: 16px 16px 0 0; }
-.statusBar { height:56px; padding: 8px; background: rgba(28, 28, 28, 0.95); }
-.loadingBar { height:32px; background: rgba(218, 128, 14, 0.4); }
-.loadingBar > .bar { width: 200px; height: 100%; background: rgb(255, 153, 0); }
+.panel { position: absolute; bottom: 0; left: 50%; margin-left: -300px; width: 600px; }
 
+.serverTitle { display: table; width: 100%; height: 64px; background: rgba(32, 32, 32, 0.92); border-radius: 16px 16px 0 0; }
+.serverTitle > h1 { display: table-cell; text-align: center; vertical-align: middle; height: 100%; }
+
+.serverInfo { display: table; width: calc(100% - 12px); padding: 6px; background: rgba(38, 38, 38, 0.875); color: white; }
+.serverInfo > div { display: table-row; }
+.serverInfo > div > p { display: table-cell; width: 50%; text-align: center; font-weight: bold; }
+.serverInfo > div > p > span { font-weight: 100; }
+
+/* status bar section */
+.statusBar { height:56px; padding: 8px 8px 4px 8px; background: rgba(28, 28, 28, 0.95); }
 .statusBar > p { color: white; margin-top: 4px }
+
+.loadingBar { height:32px; background: rgba(218, 128, 14, 0.4); border-radius: 2px; }
+.loadingBar > p { color: white; height: 20px; overflow: visible; word-break: break-all; padding: 0px 4px; text-shadow: 1px 1px #000; }
+.loadingBar > .loadStatus { width: calc(100% - 58px); margin-top: -26px; }
+.loadingBar > .loadPercent { width: 50px; margin-top: -20px; text-align: right; float: right; }
+.loadingBar > .bar {  display: block; width: 200px; height: 100%; background: rgb(255, 153, 0);  border-radius: 2px; }
+
 .version { float: left; }
 .credits { float: right; }
