@@ -16,7 +16,7 @@ h1,h2,h3,h4,p { margin: 0; padding: 0; font-family: "Trebuchet MS"; }
 
 .serverInfo { display: table; width: calc(100% - 12px); padding: 6px; background: rgba(38, 38, 38, 0.875); color: white; }
 .serverInfo > div { display: table-row; }
-.serverInfo > div > p { display: table-cell; width: 50%; text-align: center; font-weight: bold; }
+.serverInfo > div > p { display: table-cell; width: 300px; text-align: center; font-weight: bold; }
 .serverInfo > div > p > span { font-weight: 100; }
 
 /* status bar section */
